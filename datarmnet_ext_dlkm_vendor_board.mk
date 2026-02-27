@@ -37,7 +37,6 @@ ifeq ($(TARGET_DATARMNET_EXT_ENABLE), true)
 			BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/rmnet_offload.ko
 			BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/rmnet_perf_tether.ko
 			BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/rmnet_perf.ko
-			BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/rmnet_wlan.ko
 		endif
 		ifneq ( ,$(call is-board-platform-in-list2,$(DATA_MEM_DLKM_BOARD_PLATFORMS_LIST)))
 			BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/rmnet_mem.ko
